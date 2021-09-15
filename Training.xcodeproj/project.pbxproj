@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		04A2B1EB26F0679F005466F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B1EA26F0679F005466F8 /* AppDelegate.swift */; };
 		04A2B1ED26F0679F005466F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B1EC26F0679F005466F8 /* SceneDelegate.swift */; };
-		04A2B1EF26F0679F005466F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B1EE26F0679F005466F8 /* ViewController.swift */; };
+		04A2B1EF26F0679F005466F8 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B1EE26F0679F005466F8 /* EmployeeListViewController.swift */; };
 		04A2B1F226F0679F005466F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A2B1F026F0679F005466F8 /* Main.storyboard */; };
 		04A2B1F526F0679F005466F8 /* Training.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B1F326F0679F005466F8 /* Training.xcdatamodeld */; };
 		04A2B1F726F0679F005466F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A2B1F626F0679F005466F8 /* Assets.xcassets */; };
 		04A2B1FA26F0679F005466F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A2B1F826F0679F005466F8 /* LaunchScreen.storyboard */; };
 		04A2B20526F0679F005466F8 /* TrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B20426F0679F005466F8 /* TrainingTests.swift */; };
 		04A2B21026F067A0005466F8 /* TrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B20F26F067A0005466F8 /* TrainingUITests.swift */; };
+		04A2B22826F06D2F005466F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B22726F06D2F005466F8 /* BaseViewController.swift */; };
+		04A2B22B26F0710F005466F8 /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B22A26F0710F005466F8 /* AddEmployeeViewController.swift */; };
+		04A2B22F26F072E5005466F8 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B22E26F072E5005466F8 /* AppData.swift */; };
+		04A2B23126F0744A005466F8 /* AddEmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B23026F0744A005466F8 /* AddEmployeeModel.swift */; };
+		04A2B23326F0ACED005466F8 /* AddEmployeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B23226F0ACED005466F8 /* AddEmployeePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,7 @@
 		04A2B1E726F0679E005466F8 /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A2B1EA26F0679F005466F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A2B1EC26F0679F005466F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04A2B1EE26F0679F005466F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04A2B1EE26F0679F005466F8 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
 		04A2B1F126F0679F005466F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04A2B1F426F0679F005466F8 /* Training.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Training.xcdatamodel; sourceTree = "<group>"; };
 		04A2B1F626F0679F005466F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		04A2B20B26F067A0005466F8 /* TrainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A2B20F26F067A0005466F8 /* TrainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingUITests.swift; sourceTree = "<group>"; };
 		04A2B21126F067A0005466F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A2B22726F06D2F005466F8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		04A2B22A26F0710F005466F8 /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
+		04A2B22E26F072E5005466F8 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		04A2B23026F0744A005466F8 /* AddEmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeModel.swift; sourceTree = "<group>"; };
+		04A2B23226F0ACED005466F8 /* AddEmployeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +111,10 @@
 		04A2B1E926F0679E005466F8 /* Training */ = {
 			isa = PBXGroup;
 			children = (
-				04A2B1EA26F0679F005466F8 /* AppDelegate.swift */,
-				04A2B1EC26F0679F005466F8 /* SceneDelegate.swift */,
-				04A2B1EE26F0679F005466F8 /* ViewController.swift */,
-				04A2B1F026F0679F005466F8 /* Main.storyboard */,
-				04A2B1F626F0679F005466F8 /* Assets.xcassets */,
-				04A2B1F826F0679F005466F8 /* LaunchScreen.storyboard */,
+				04A2B22026F06844005466F8 /* Supporting Files */,
+				04A2B21F26F06838005466F8 /* AppModules */,
+				04A2B21D26F067FD005466F8 /* Resources */,
 				04A2B1FB26F0679F005466F8 /* Info.plist */,
-				04A2B1F326F0679F005466F8 /* Training.xcdatamodeld */,
 			);
 			path = Training;
 			sourceTree = "<group>";
@@ -129,6 +135,95 @@
 				04A2B21126F067A0005466F8 /* Info.plist */,
 			);
 			path = TrainingUITests;
+			sourceTree = "<group>";
+		};
+		04A2B21D26F067FD005466F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04A2B21E26F06815005466F8 /* Storyboards */,
+				04A2B1F326F0679F005466F8 /* Training.xcdatamodeld */,
+				04A2B1F626F0679F005466F8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04A2B21E26F06815005466F8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04A2B1F826F0679F005466F8 /* LaunchScreen.storyboard */,
+				04A2B1F026F0679F005466F8 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04A2B21F26F06838005466F8 /* AppModules */ = {
+			isa = PBXGroup;
+			children = (
+				04A2B22926F070F9005466F8 /* Add Employee */,
+				04A2B22626F06D15005466F8 /* BaseViewController */,
+				04A2B22526F06CE6005466F8 /* EmployeeList */,
+			);
+			path = AppModules;
+			sourceTree = "<group>";
+		};
+		04A2B22026F06844005466F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04A2B1EA26F0679F005466F8 /* AppDelegate.swift */,
+				04A2B1EC26F0679F005466F8 /* SceneDelegate.swift */,
+				04A2B22E26F072E5005466F8 /* AppData.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04A2B22126F068EE005466F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04A2B1EE26F0679F005466F8 /* EmployeeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04A2B22226F068F7005466F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04A2B22326F068FB005466F8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04A2B22526F06CE6005466F8 /* EmployeeList */ = {
+			isa = PBXGroup;
+			children = (
+				04A2B22326F068FB005466F8 /* Presenter */,
+				04A2B22226F068F7005466F8 /* Model */,
+				04A2B22126F068EE005466F8 /* View */,
+			);
+			path = EmployeeList;
+			sourceTree = "<group>";
+		};
+		04A2B22626F06D15005466F8 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04A2B22726F06D2F005466F8 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		04A2B22926F070F9005466F8 /* Add Employee */ = {
+			isa = PBXGroup;
+			children = (
+				04A2B22A26F0710F005466F8 /* AddEmployeeViewController.swift */,
+				04A2B23026F0744A005466F8 /* AddEmployeeModel.swift */,
+				04A2B23226F0ACED005466F8 /* AddEmployeePresenter.swift */,
+			);
+			path = "Add Employee";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +356,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A2B1EF26F0679F005466F8 /* ViewController.swift in Sources */,
+				04A2B22B26F0710F005466F8 /* AddEmployeeViewController.swift in Sources */,
+				04A2B22826F06D2F005466F8 /* BaseViewController.swift in Sources */,
+				04A2B1EF26F0679F005466F8 /* EmployeeListViewController.swift in Sources */,
+				04A2B23126F0744A005466F8 /* AddEmployeeModel.swift in Sources */,
 				04A2B1F526F0679F005466F8 /* Training.xcdatamodeld in Sources */,
 				04A2B1EB26F0679F005466F8 /* AppDelegate.swift in Sources */,
 				04A2B1ED26F0679F005466F8 /* SceneDelegate.swift in Sources */,
+				04A2B23326F0ACED005466F8 /* AddEmployeePresenter.swift in Sources */,
+				04A2B22F26F072E5005466F8 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +542,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Training/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +561,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Training/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

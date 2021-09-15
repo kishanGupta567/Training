@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qbc-Gx-nD7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Employee List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="EmployeeListViewController" id="BYZ-38-t0r" customClass="EmployeeListViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v31-ob-CZl">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v31-ob-CZl" secondAttribute="bottom" id="08d-Pd-89h"/>
+                            <constraint firstItem="v31-ob-CZl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7KX-Aj-58l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v31-ob-CZl" secondAttribute="trailing" id="SKb-ai-gdw"/>
+                            <constraint firstItem="v31-ob-CZl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uCQ-HJ-S5y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H9H-gD-hcB"/>
+                    <connections>
+                        <outlet property="tableView" destination="v31-ob-CZl" id="OOq-6l-C4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.7391304347827" y="51.5625"/>
+        </scene>
+        <!--Add Employee View Controller-->
+        <scene sceneID="b5C-Cm-ySR">
+            <objects>
+                <viewController storyboardIdentifier="AddEmployeeViewController" id="ybM-R0-lTt" customClass="AddEmployeeViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2N-T8-Nkh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFu-o8-LAY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BV3-pr-t2h">
+                                        <rect key="frame" x="24" y="247" width="366" height="144"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4hK-20-11c">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="mpP-Ri-0OA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile no." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eig-nx-MEm">
+                                                <rect key="frame" x="0.0" y="52" width="366" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Passport id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OpZ-iL-FbX">
+                                                <rect key="frame" x="0.0" y="104" width="366" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvG-H4-H86">
+                                        <rect key="frame" x="24" y="411" width="366" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3KT-3g-82l"/>
+                                        </constraints>
+                                        <state key="normal" title="Add Employee"/>
+                                        <connections>
+                                            <action selector="addEmployeeTapped:" destination="ybM-R0-lTt" eventType="touchUpInside" id="Vmf-qg-aai"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="IvG-H4-H86" firstAttribute="leading" secondItem="BV3-pr-t2h" secondAttribute="leading" id="88q-z1-q1I"/>
+                                    <constraint firstItem="IvG-H4-H86" firstAttribute="top" secondItem="BV3-pr-t2h" secondAttribute="bottom" constant="20" id="9MJ-YS-wcV"/>
+                                    <constraint firstItem="IvG-H4-H86" firstAttribute="trailing" secondItem="BV3-pr-t2h" secondAttribute="trailing" id="UEv-lq-Wzf"/>
+                                    <constraint firstItem="BV3-pr-t2h" firstAttribute="leading" secondItem="rFu-o8-LAY" secondAttribute="leading" constant="24" id="WfU-GT-CA6"/>
+                                    <constraint firstItem="BV3-pr-t2h" firstAttribute="centerY" secondItem="rFu-o8-LAY" secondAttribute="centerY" constant="-90" id="Yf2-yd-7IN"/>
+                                    <constraint firstAttribute="trailing" secondItem="BV3-pr-t2h" secondAttribute="trailing" constant="24" id="xgP-QB-Q5j"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="exD-aa-AIa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="exD-aa-AIa" firstAttribute="bottom" secondItem="rFu-o8-LAY" secondAttribute="bottom" id="h3n-di-5Ga"/>
+                            <constraint firstItem="exD-aa-AIa" firstAttribute="trailing" secondItem="rFu-o8-LAY" secondAttribute="trailing" id="pjT-Ri-5k3"/>
+                            <constraint firstItem="rFu-o8-LAY" firstAttribute="top" secondItem="exD-aa-AIa" secondAttribute="top" id="q00-Cx-bMC"/>
+                            <constraint firstItem="rFu-o8-LAY" firstAttribute="leading" secondItem="exD-aa-AIa" secondAttribute="leading" id="zfv-Ok-CSu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addEmployeeButton" destination="IvG-H4-H86" id="sKl-FU-lZ9"/>
+                        <outlet property="mobileTextField" destination="Eig-nx-MEm" id="EN8-Wm-oEP"/>
+                        <outlet property="nameTextField" destination="4hK-20-11c" id="UxY-eD-wA3"/>
+                        <outlet property="passportIDTextField" destination="OpZ-iL-FbX" id="6FK-aZ-Det"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guK-MD-wUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="52"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VF7-Xh-Vqx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qbc-Gx-nD7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ykh-rs-N52">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="U5b-Nr-vYf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WpY-Wv-GKx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="51.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
