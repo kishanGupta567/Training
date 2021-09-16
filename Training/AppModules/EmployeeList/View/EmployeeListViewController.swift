@@ -16,6 +16,7 @@ class EmployeeListViewController: BaseViewController {
         title = "List of employees"
         
         tableView.dataSource = self
+        tableView.delegate = self
         
         initRightNavBarButton(title: "add")
     }
@@ -32,7 +33,7 @@ class EmployeeListViewController: BaseViewController {
 }
 
 
-extension EmployeeListViewController : UITableViewDataSource {
+extension EmployeeListViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return employeeList.count
     }
@@ -41,5 +42,11 @@ extension EmployeeListViewController : UITableViewDataSource {
         let cell = UITableViewCell(style: .value1, reuseIdentifier: "Cell")
         cell.textLabel?.text = employeeList[indexPath.row].name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "EditEmployeeViewController") as! EditEmployeeViewController
+        vc.initData(employe: employeeList[indexPath.row], pos: indexPath.row)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

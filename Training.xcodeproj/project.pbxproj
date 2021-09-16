@@ -21,6 +21,9 @@
 		04A2B22F26F072E5005466F8 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B22E26F072E5005466F8 /* AppData.swift */; };
 		04A2B23126F0744A005466F8 /* AddEmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B23026F0744A005466F8 /* AddEmployeeModel.swift */; };
 		04A2B23326F0ACED005466F8 /* AddEmployeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B23226F0ACED005466F8 /* AddEmployeePresenter.swift */; };
+		81DB303326F3871100C6C084 /* EditEmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB303226F3871100C6C084 /* EditEmployeeModel.swift */; };
+		81DB303826F3873400C6C084 /* EditEmployeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB303726F3873400C6C084 /* EditEmployeePresenter.swift */; };
+		81DB304526F3878D00C6C084 /* EditEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB304426F3878D00C6C084 /* EditEmployeeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		04A2B22E26F072E5005466F8 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		04A2B23026F0744A005466F8 /* AddEmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeModel.swift; sourceTree = "<group>"; };
 		04A2B23226F0ACED005466F8 /* AddEmployeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeePresenter.swift; sourceTree = "<group>"; };
+		81DB303226F3871100C6C084 /* EditEmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeeModel.swift; sourceTree = "<group>"; };
+		81DB303726F3873400C6C084 /* EditEmployeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeePresenter.swift; sourceTree = "<group>"; };
+		81DB304426F3878D00C6C084 /* EditEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 		04A2B21F26F06838005466F8 /* AppModules */ = {
 			isa = PBXGroup;
 			children = (
+				81DB303126F386E700C6C084 /* Edit employee */,
 				04A2B22926F070F9005466F8 /* Add Employee */,
 				04A2B22626F06D15005466F8 /* BaseViewController */,
 				04A2B22526F06CE6005466F8 /* EmployeeList */,
@@ -224,6 +231,16 @@
 				04A2B23226F0ACED005466F8 /* AddEmployeePresenter.swift */,
 			);
 			path = "Add Employee";
+			sourceTree = "<group>";
+		};
+		81DB303126F386E700C6C084 /* Edit employee */ = {
+			isa = PBXGroup;
+			children = (
+				81DB303226F3871100C6C084 /* EditEmployeeModel.swift */,
+				81DB304426F3878D00C6C084 /* EditEmployeeViewController.swift */,
+				81DB303726F3873400C6C084 /* EditEmployeePresenter.swift */,
+			);
+			path = "Edit employee";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,11 +373,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DB304526F3878D00C6C084 /* EditEmployeeViewController.swift in Sources */,
 				04A2B22B26F0710F005466F8 /* AddEmployeeViewController.swift in Sources */,
 				04A2B22826F06D2F005466F8 /* BaseViewController.swift in Sources */,
 				04A2B1EF26F0679F005466F8 /* EmployeeListViewController.swift in Sources */,
 				04A2B23126F0744A005466F8 /* AddEmployeeModel.swift in Sources */,
 				04A2B1F526F0679F005466F8 /* Training.xcdatamodeld in Sources */,
+				81DB303826F3873400C6C084 /* EditEmployeePresenter.swift in Sources */,
+				81DB303326F3871100C6C084 /* EditEmployeeModel.swift in Sources */,
 				04A2B1EB26F0679F005466F8 /* AppDelegate.swift in Sources */,
 				04A2B1ED26F0679F005466F8 /* SceneDelegate.swift in Sources */,
 				04A2B23326F0ACED005466F8 /* AddEmployeePresenter.swift in Sources */,

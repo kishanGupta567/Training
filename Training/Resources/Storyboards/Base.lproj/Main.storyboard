@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qbc-Gx-nD7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qbc-Gx-nD7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -115,6 +115,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guK-MD-wUK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1812" y="52"/>
+        </scene>
+        <!--Edit Employee View Controller-->
+        <scene sceneID="5o3-xr-6Jm">
+            <objects>
+                <viewController storyboardIdentifier="EditEmployeeViewController" id="jC3-Dp-Lpq" customClass="EditEmployeeViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gcC-9K-phR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyn-2s-qhq">
+                                <rect key="frame" x="24" y="416" width="366" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CYr-uR-DBZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Edit Text"/>
+                                <connections>
+                                    <action selector="editDetail:" destination="jC3-Dp-Lpq" eventType="touchUpInside" id="jec-Fy-YZz"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mnu-s9-bN1">
+                                <rect key="frame" x="24" y="252" width="366" height="144"/>
+                                <subviews>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W0A-UN-B6R">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="sSX-Rs-3t3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile no." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohD-cb-8yJ">
+                                        <rect key="frame" x="0.0" y="52" width="366" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passport id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XY7-j8-29v">
+                                        <rect key="frame" x="0.0" y="104" width="366" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="piT-QA-piZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yyn-2s-qhq" firstAttribute="top" secondItem="mnu-s9-bN1" secondAttribute="bottom" constant="20" id="EAi-mB-Jch"/>
+                            <constraint firstItem="yyn-2s-qhq" firstAttribute="trailing" secondItem="mnu-s9-bN1" secondAttribute="trailing" id="KZX-tK-pTv"/>
+                            <constraint firstItem="mnu-s9-bN1" firstAttribute="leading" secondItem="piT-QA-piZ" secondAttribute="leading" constant="24" id="YlW-rd-Goq"/>
+                            <constraint firstItem="mnu-s9-bN1" firstAttribute="top" secondItem="piT-QA-piZ" secondAttribute="top" constant="208" id="lVs-t1-Fe6"/>
+                            <constraint firstItem="piT-QA-piZ" firstAttribute="trailing" secondItem="mnu-s9-bN1" secondAttribute="trailing" constant="24" id="rWL-ej-c4W"/>
+                            <constraint firstItem="yyn-2s-qhq" firstAttribute="leading" secondItem="mnu-s9-bN1" secondAttribute="leading" id="yKR-2r-FlI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mobileNoLbl" destination="ohD-cb-8yJ" id="cBn-BH-lqm"/>
+                        <outlet property="nameLbl" destination="W0A-UN-B6R" id="u2T-gS-c9C"/>
+                        <outlet property="passportIdLbl" destination="XY7-j8-29v" id="5ej-58-1sT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Miw-xP-zEN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2491" y="54"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VF7-Xh-Vqx">
