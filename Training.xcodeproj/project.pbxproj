@@ -21,6 +21,9 @@
 		04A2B22F26F072E5005466F8 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B22E26F072E5005466F8 /* AppData.swift */; };
 		04A2B23126F0744A005466F8 /* AddEmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B23026F0744A005466F8 /* AddEmployeeModel.swift */; };
 		04A2B23326F0ACED005466F8 /* AddEmployeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B23226F0ACED005466F8 /* AddEmployeePresenter.swift */; };
+		0963AED226F460A700339ACF /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0963AECD26F4607400339ACF /* Extra.swift */; };
+		09B1AD2626F1D1C70005DD9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B1AD2526F1D1C70005DD9F /* DetailViewController.swift */; };
+		09B1AD3526F205420005DD9F /* DetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B1AD3426F205420005DD9F /* DetailViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		04A2B22E26F072E5005466F8 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		04A2B23026F0744A005466F8 /* AddEmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeModel.swift; sourceTree = "<group>"; };
 		04A2B23226F0ACED005466F8 /* AddEmployeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeePresenter.swift; sourceTree = "<group>"; };
+		0963AECD26F4607400339ACF /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
+		09B1AD2526F1D1C70005DD9F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		09B1AD3426F205420005DD9F /* DetailViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 			children = (
 				04A2B20F26F067A0005466F8 /* TrainingUITests.swift */,
 				04A2B21126F067A0005466F8 /* Info.plist */,
+				0963AECD26F4607400339ACF /* Extra.swift */,
 			);
 			path = TrainingUITests;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 				04A2B22926F070F9005466F8 /* Add Employee */,
 				04A2B22626F06D15005466F8 /* BaseViewController */,
 				04A2B22526F06CE6005466F8 /* EmployeeList */,
+				0963AED926F4760000339ACF /* Details Edit */,
 			);
 			path = AppModules;
 			sourceTree = "<group>";
@@ -224,6 +232,15 @@
 				04A2B23226F0ACED005466F8 /* AddEmployeePresenter.swift */,
 			);
 			path = "Add Employee";
+			sourceTree = "<group>";
+		};
+		0963AED926F4760000339ACF /* Details Edit */ = {
+			isa = PBXGroup;
+			children = (
+				09B1AD3426F205420005DD9F /* DetailViewPresenter.swift */,
+				09B1AD2526F1D1C70005DD9F /* DetailViewController.swift */,
+			);
+			path = "Details Edit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,8 +380,10 @@
 				04A2B1F526F0679F005466F8 /* Training.xcdatamodeld in Sources */,
 				04A2B1EB26F0679F005466F8 /* AppDelegate.swift in Sources */,
 				04A2B1ED26F0679F005466F8 /* SceneDelegate.swift in Sources */,
+				09B1AD2626F1D1C70005DD9F /* DetailViewController.swift in Sources */,
 				04A2B23326F0ACED005466F8 /* AddEmployeePresenter.swift in Sources */,
 				04A2B22F26F072E5005466F8 /* AppData.swift in Sources */,
+				09B1AD3526F205420005DD9F /* DetailViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0963AED226F460A700339ACF /* Extra.swift in Sources */,
 				04A2B21026F067A0005466F8 /* TrainingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,7 +600,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TrainingTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -601,7 +621,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TrainingTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,6 +641,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TrainingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,6 +661,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TrainingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
