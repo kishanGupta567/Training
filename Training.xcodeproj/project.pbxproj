@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D3322826F48FF0002AB376 /* EditEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3322726F48FF0002AB376 /* EditEmployeeViewController.swift */; };
+		01D3322A26F49014002AB376 /* EditEmployeePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3322926F49014002AB376 /* EditEmployeePresenter.swift */; };
+		01D3322C26F496CC002AB376 /* EditEmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3322B26F496CC002AB376 /* EditEmployeeModel.swift */; };
 		04A2B1EB26F0679F005466F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B1EA26F0679F005466F8 /* AppDelegate.swift */; };
 		04A2B1ED26F0679F005466F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B1EC26F0679F005466F8 /* SceneDelegate.swift */; };
 		04A2B1EF26F0679F005466F8 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2B1EE26F0679F005466F8 /* EmployeeListViewController.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01D3322726F48FF0002AB376 /* EditEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeeViewController.swift; sourceTree = "<group>"; };
+		01D3322926F49014002AB376 /* EditEmployeePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeePresenter.swift; sourceTree = "<group>"; };
+		01D3322B26F496CC002AB376 /* EditEmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeeModel.swift; sourceTree = "<group>"; };
 		04A2B1E726F0679E005466F8 /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A2B1EA26F0679F005466F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A2B1EC26F0679F005466F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D3322626F48F7E002AB376 /* Edit Employee */ = {
+			isa = PBXGroup;
+			children = (
+				01D3322726F48FF0002AB376 /* EditEmployeeViewController.swift */,
+				01D3322926F49014002AB376 /* EditEmployeePresenter.swift */,
+				01D3322B26F496CC002AB376 /* EditEmployeeModel.swift */,
+			);
+			path = "Edit Employee";
+			sourceTree = "<group>";
+		};
 		04A2B1DE26F0679E005466F8 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +175,7 @@
 		04A2B21F26F06838005466F8 /* AppModules */ = {
 			isa = PBXGroup;
 			children = (
+				01D3322626F48F7E002AB376 /* Edit Employee */,
 				04A2B22926F070F9005466F8 /* Add Employee */,
 				04A2B22626F06D15005466F8 /* BaseViewController */,
 				04A2B22526F06CE6005466F8 /* EmployeeList */,
@@ -184,25 +201,9 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		04A2B22226F068F7005466F8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		04A2B22326F068FB005466F8 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
 		04A2B22526F06CE6005466F8 /* EmployeeList */ = {
 			isa = PBXGroup;
 			children = (
-				04A2B22326F068FB005466F8 /* Presenter */,
-				04A2B22226F068F7005466F8 /* Model */,
 				04A2B22126F068EE005466F8 /* View */,
 			);
 			path = EmployeeList;
@@ -358,8 +359,11 @@
 			files = (
 				04A2B22B26F0710F005466F8 /* AddEmployeeViewController.swift in Sources */,
 				04A2B22826F06D2F005466F8 /* BaseViewController.swift in Sources */,
+				01D3322826F48FF0002AB376 /* EditEmployeeViewController.swift in Sources */,
 				04A2B1EF26F0679F005466F8 /* EmployeeListViewController.swift in Sources */,
 				04A2B23126F0744A005466F8 /* AddEmployeeModel.swift in Sources */,
+				01D3322C26F496CC002AB376 /* EditEmployeeModel.swift in Sources */,
+				01D3322A26F49014002AB376 /* EditEmployeePresenter.swift in Sources */,
 				04A2B1F526F0679F005466F8 /* Training.xcdatamodeld in Sources */,
 				04A2B1EB26F0679F005466F8 /* AppDelegate.swift in Sources */,
 				04A2B1ED26F0679F005466F8 /* SceneDelegate.swift in Sources */,

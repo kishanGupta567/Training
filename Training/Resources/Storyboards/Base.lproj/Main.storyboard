@@ -134,6 +134,81 @@
             </objects>
             <point key="canvasLocation" x="111.59420289855073" y="51.5625"/>
         </scene>
+        <!--Edit Employee View Controller-->
+        <scene sceneID="iTb-YR-84A">
+            <objects>
+                <viewController storyboardIdentifier="EditEmployeeViewController" id="uRc-ep-kuo" customClass="EditEmployeeViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1mw-gg-kqB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKv-m7-bXB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="bOj-tD-0gM">
+                                        <rect key="frame" x="24" y="247" width="366" height="144"/>
+                                        <subviews>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z5q-tC-BWV">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="BB2-hJ-cec"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile no." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1J-LF-efQ">
+                                                <rect key="frame" x="0.0" y="52" width="366" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Passport id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Wb-rH-Knp">
+                                                <rect key="frame" x="0.0" y="104" width="366" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0B1-G6-bYh">
+                                        <rect key="frame" x="24" y="411" width="366" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qkO-WD-Dyn"/>
+                                        </constraints>
+                                        <state key="normal" title="Edit"/>
+                                        <connections>
+                                            <action selector="editDetail:" destination="uRc-ep-kuo" eventType="touchUpInside" id="ey5-O0-eGW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="bOj-tD-0gM" firstAttribute="leading" secondItem="zKv-m7-bXB" secondAttribute="leading" constant="24" id="EhH-Q2-iVM"/>
+                                    <constraint firstAttribute="trailing" secondItem="bOj-tD-0gM" secondAttribute="trailing" constant="24" id="GoC-Ai-MBd"/>
+                                    <constraint firstItem="bOj-tD-0gM" firstAttribute="centerY" secondItem="zKv-m7-bXB" secondAttribute="centerY" constant="-90" id="Hoy-2q-TdV"/>
+                                    <constraint firstItem="0B1-G6-bYh" firstAttribute="leading" secondItem="bOj-tD-0gM" secondAttribute="leading" id="UdN-Fs-WYB"/>
+                                    <constraint firstItem="0B1-G6-bYh" firstAttribute="top" secondItem="bOj-tD-0gM" secondAttribute="bottom" constant="20" id="tzI-qs-7Mx"/>
+                                    <constraint firstItem="0B1-G6-bYh" firstAttribute="trailing" secondItem="bOj-tD-0gM" secondAttribute="trailing" id="xLG-Dk-sVn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vou-BW-j3E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zKv-m7-bXB" firstAttribute="top" secondItem="vou-BW-j3E" secondAttribute="top" id="3YU-Ft-0cE"/>
+                            <constraint firstItem="vou-BW-j3E" firstAttribute="trailing" secondItem="zKv-m7-bXB" secondAttribute="trailing" id="CMS-u7-GEL"/>
+                            <constraint firstItem="zKv-m7-bXB" firstAttribute="leading" secondItem="vou-BW-j3E" secondAttribute="leading" id="G3Z-ET-Bvx"/>
+                            <constraint firstItem="vou-BW-j3E" firstAttribute="bottom" secondItem="zKv-m7-bXB" secondAttribute="bottom" id="t3A-ps-tq5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mobileNoLbl" destination="n1J-LF-efQ" id="w9p-tU-ijy"/>
+                        <outlet property="nameLbl" destination="Z5q-tC-BWV" id="Yvv-en-Sbe"/>
+                        <outlet property="passportIdLbl" destination="3Wb-rH-Knp" id="Lxo-Su-Oom"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mEu-c7-KI3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2510" y="52"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

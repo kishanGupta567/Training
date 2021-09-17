@@ -6,16 +6,12 @@ class EmployeeListViewController: BaseViewController {
     @IBOutlet private weak var tableView: UITableView!
     private var employeeList = AppData.shared.globalEmployeeList
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        initView()
-    }
-    
+   
     private func initView() {
         title = "List of employees"
         
         tableView.dataSource = self
+        tableView.delegate = self
         
         initRightNavBarButton(title: "add")
     }
@@ -32,6 +28,17 @@ class EmployeeListViewController: BaseViewController {
 }
 
 
+//MARK: - LifeCycle Methods
+extension EmployeeListViewController{
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        initView()
+    }
+}
+
+
+//MARK: - UITableViewDataSource Methods
 extension EmployeeListViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return employeeList.count
@@ -43,3 +50,19 @@ extension EmployeeListViewController : UITableViewDataSource {
         return cell
     }
 }
+
+
+//MARK: - UITableViewDelegate Methods
+extension EmployeeListViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "EditEmployeeViewController") as! EditEmployeeViewController
+        
+        vc.initData(employe: employeeList[indexPath.row], pos: indexPath.row)   
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+}
+
