@@ -25,4 +25,9 @@ func isValidate(employee: Employee) {
         delegate.success()
     }
 }
+    func settingFinalData(pos:Int , newEmployee:Employee){
+        AppData.shared.globalEmployeeList[pos].name=newEmployee.name
+        AppData.shared.globalEmployeeList[pos].mobile=newEmployee.mobile
+        AppData.shared.globalEmployeeList[pos].passportID=newEmployee.passportID
+    }
 }

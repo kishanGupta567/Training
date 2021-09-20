@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController,EditEmployeeProtocol {
+class DetailViewController: UIViewController, EditEmployeeProtocol {
     var x:Int=0
     private var editPresenter=DetailViewPresenter()
     @IBOutlet weak var passportLabel: UITextField!
@@ -36,15 +36,14 @@ class DetailViewController: UIViewController,EditEmployeeProtocol {
     func showAlert(message: String, title: String, okAction: (() -> Void)?) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { _ in
-                okAction!()
+                okAction?()
             }))
         
         present(alert, animated: true, completion: nil)
     }
     func success() {
-        AppData.shared.globalEmployeeList[x].name = nameLabel.text!
-        AppData.shared.globalEmployeeList[x].mobile = mobileLabel.text!
-        AppData.shared.globalEmployeeList[x].passportID = passportLabel.text!
+        let editedEmployee=Employee(name: nameLabel.text!, mobile: mobileLabel.text!, passportID: passportLabel.text!)
+        editPresenter.settingFinalData(pos: x, newEmployee: editedEmployee)
         showAlert(message: "Employee data saved", title: "Success") {
                     self.navigationController?.popViewController(animated: true)
                 }
